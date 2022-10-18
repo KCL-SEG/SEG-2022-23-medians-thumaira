@@ -4,7 +4,7 @@
 while True:
     try:
         print("Enter a list of numbers separated by commas: ")
-        numbers = [float(value) for value in input().split(",")]
+        numbers = [float(value) for value in input().split(",").sort()]
         if len(numbers)%2==0:
             first_middle=int(len(numbers)/2)-1
             second_middle=int(len(numbers)/2)
@@ -19,4 +19,4 @@ while True:
     else:
         break
 
-print(f'The median of {numbers} is {median}')
+print(f' The median of {numbers} is {median}')
